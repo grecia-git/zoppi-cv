@@ -1,0 +1,21 @@
+<div >
+		<h2><b>Experiencia</b></h2>
+    <app-addexperiencia
+      (onAddExperience)="addExperience($event)">
+
+    </app-addexperiencia>
+
+    <app-boton
+      color="{{showAddExperience? 'red':'green'}}"
+      text="{{showAddExperience? 'Cerrar': 'Agregar'}}"
+      (btnclick)="toggleAddExperience()">
+    </app-boton>
+
+    <app-item
+          *ngFor="let experience of experiences"
+          [experience]="experience"
+          (onDeleteExperience) = "deleteExperience(experience)"
+          >
+    </app-item>
+
+</div>

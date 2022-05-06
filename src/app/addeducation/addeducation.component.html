@@ -1,0 +1,41 @@
+<form class="add-form" (ngSubmit)="onSubmit()" *ngIf="showAddEducation">
+
+  <div> <!-- class=form-control> -->
+    <input class="form-control" type="title"
+     name="agregar titulo"
+     id="addtitle"
+     placeholder="Agregar titulo"
+     [(ngModel)]="title"/>
+  </div>
+
+  <div> <!-- class=form-control> -->
+    <input class="form-control" type="text"
+    name="agregar Instituto"
+     id="addinstitute "
+     placeholder="Agregar Instituto"
+     [(ngModel)]="institute"
+
+    />
+  </div>
+
+  <div> <!-- class=form-control> -->
+    <input class="form-control" type="date"
+     name="agregar startDate"
+     id="inputstartdate"
+      placeholder="Agregar Fecha de Inicio"
+      [(ngModel)]="startDate"
+    />
+  </div>
+
+  <div> <!-- class=form-control> -->
+    <input class="form-control" type="date"
+     name="agregar endDate"
+     id="inputenddate"
+    placeholder="Agregar Fecha de Fin"
+    [(ngModel)]="endDate"
+    />
+  </div>
+
+  <input type="submit"  value="Grabar Educación"  class="btn">
+</form>
+

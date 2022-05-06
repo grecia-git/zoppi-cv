@@ -1,0 +1,79 @@
+<div class= "skill">
+  <h2><b>Habilidades</b></h2>
+  <app-addskills
+    (onAddSkill)="addLanguageSkill($event)">
+  </app-addskills>
+
+  <app-boton
+    color="{{showAddSkill? 'red':'green'}}"
+    text="{{showAddSkill?'Cerrar': 'Agregar'}}"
+    (btnclick)="toggleAddLanguageSkill()">
+  </app-boton>
+
+
+  <app-itemskill
+    *ngFor="let languageSkill of languageSkills"
+    [skill]="languageSkill"
+    (onDeleteSkill) = "deleteLanguageSkill(languageSkill)">
+  </app-itemskill>
+
+
+  <app-itemskill
+    *ngFor="let programLanguageSkill of programLanguageSkills"
+    [skill]="programLanguageSkill"
+    (onDeleteSkill) = "deleteProgramLanguageSkill(programLanguageSkill)">
+  </app-itemskill>
+
+
+
+  <app-itemskill
+    *ngFor="let othersSkill of othersSkills"
+    [skill]="othersSkill"
+    (onDeleteSkill) = "deleteOthersSkill(othersSkill)" >
+  </app-itemskill>
+
+</div>
+
+<!--
+<div class= "skill">
+  <h2><b>Lenguage de Programacion</b></h2>
+  <app-addskills
+    (onAddSkill)="addProgramLangugeSkill($event)">
+  </app-addskills>
+
+  <app-boton
+    color="{{showAddProgramLanguageSkill? 'red':'green'}}"
+    text="{{showAddProgramLanguageSkill?'Close': 'Add'}}"
+    (btnclick)="toggleAddProgramLanguageSkill()">
+  </app-boton>
+
+  <app-itemskill
+        *ngFor="let programLanguageSkill of programLanguageSkills"
+        [skill]="programLanguageSkill"
+        (onDeleteSkill) = "deleteProgramLanguageSkill(programLanguageSkill)"
+        >
+  </app-itemskill>
+
+</div>
+
+<div class= "skill">
+  <h2><b>Otros</b></h2>
+  <app-addskills
+    (onAddSkill)="addOthersSkill($event)">
+  </app-addskills>
+
+  <app-boton
+    color="{{showAddOthersSkill? 'red':'green'}}"
+    text="{{showAddOthersSkill?'Close': 'Add'}}"
+    (btnclick)="toggleAddOthersSkill()">
+  </app-boton>
+
+  <app-itemskill
+        *ngFor="let othersSkill of othersSkills"
+        [skill]="othersSkill"
+        (onDeleteSkill) = "deleteOthersSkill(othersSkill)"
+        >
+  </app-itemskill>
+
+</div>
+-->

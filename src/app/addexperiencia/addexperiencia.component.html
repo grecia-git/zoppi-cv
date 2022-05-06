@@ -1,0 +1,30 @@
+<form class="add-form" (ngSubmit)="onSubmit()" *ngIf="showAddExperience">
+
+  <div> <!-- class=form-control> -->
+    <input class="form-control" type="title"
+     name="agregar rol"
+     id="addrol"
+     placeholder="Agregar rol"
+     [(ngModel)]="rol"/>
+  </div>
+
+  <div> <!-- class=form-control> -->
+    <input class="form-control" type="date"
+     name="agregar startDate"
+     id="inputstartdate"
+      placeholder="Agregar Fecha de Inicio"
+      [(ngModel)]="startDate"
+    />
+  </div>
+
+  <div> <!-- class=form-control> -->
+    <input class="form-control" type="date"
+     name="agregar endDate"
+     id="inputenddate"
+    placeholder="Agregar Fecha de Fin"
+    [(ngModel)]="endDate"
+    />
+  </div>
+
+  <input type="submit"  value="Grabar Experiencia"  class="btn">
+</form>

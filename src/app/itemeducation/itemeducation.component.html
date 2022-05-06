@@ -1,0 +1,26 @@
+
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Titulo</th>
+      <th scope="col">Instituto</th>
+      <th scope="col">Inicio</th>
+      <th scope="col">Finalizacion</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Borrar</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+      <td>{{education.title}}</td>
+      <td>{{education.institute}}</td>
+      <td>{{education.startDate}}</td>
+      <td>{{education.endDate}}</td>
+
+      <td><button class="btn btn-outline-warning"><i class="far fa-edit"></i> Editar</button></td>
+      <td><button class="btn btn-outline-danger" (click)="(OnDelete(education))"><i class="far fa-trash-alt"></i> Eliminar</button></td>
+
+  </tbody>
+</table>

@@ -1,0 +1,25 @@
+<div class= "education">
+		<h2><b>Educación</b></h2>
+
+<app-addeducation
+  (onAddEducation)="addEducation($event)"
+  >
+</app-addeducation>
+
+
+    <app-boton
+      color="{{showAddEducation ? 'red':'green'}}"
+      text="{{showAddEducation ? 'Cerrar': 'Agregar'}}"
+      (btnclick)="toggleAddEducation()">
+    </app-boton>
+
+    <app-itemeducation
+
+      *ngFor="let education of educations"
+      [education]="education"
+      (onDeleteEducation) = "deleteEducation(education)"
+
+      >
+
+    </app-itemeducation>
+</div>

@@ -1,0 +1,9 @@
+#barra_imagen {
+  background-color: darkslateblue;
+  padding: 10px;
+}
+#ap {
+  max-width: 140px ;
+  max-height: 135px;
+  padding: 15px;
+}

@@ -1,0 +1,57 @@
+<form class="add-form" (ngSubmit)="onSubmitLanguageSkill()" *ngIf="showAddSkill">
+
+
+  <div >
+    <h3>Idiomas</h3>
+    <select name="Agregar tipo" id="languageSkillLType" class="form-control" [(ngModel)]="type">
+        <option value="" disabled selected>Elige un Idioma</option>
+        <option *ngFor="let language of languages" [value]="language" >{{language}}</option>
+    </select>
+
+    <select name="Agregar nivel" id="languageSkillLevel"class="form-control"  [(ngModel)]="level">
+       <option value="" disabled selected>Elige un Nivel</option>
+       <option *ngFor="let level of levels"[value] ="level"
+       >{{level}}</option>
+  </select>
+
+  <input type="submit"  value="Agregar Idioma" class="btn">
+  </div>
+</form>
+
+
+<form  (ngSubmit)="onSubmitProgramLanguageSkill()" *ngIf="showAddSkill">
+
+  <div >
+    <h3>Lenguajes de Programación</h3>
+
+      <select name="Agregar tipo" id="languagetype" class="form-control" [(ngModel)]="type">
+        <option value="" disabled selected>Elige un Lenguage de Programación</option>
+        <option *ngFor="let programlanguage of programLanguages" [value]="programlanguage" >{{programlanguage}}</option>
+      </select>
+
+      <select name="Agregar nivel" id="languageSkillLevel"class="form-control"  [(ngModel)]="level">
+        <option value="" disabled selected>Elige un Nivel</option>
+        <option *ngFor="let level of levels"[value] ="level">{{level}}</option>
+      </select>
+
+  <input type="submit"  value="Agregar Lenguaje de Programacion" class="btn">
+
+
+<div>
+
+<form  (ngSubmit)="onSubmitOtherSkill()" *ngIf="showAddSkill">
+  <div >
+  <h3>Otras Habilidades</h3>
+
+    <input type="string" class="form-control"
+     name="Agregar tipo"
+     id="otherSkillType"
+      placeholder="Agregar Habilidad"
+      [(ngModel)]="type"/>
+
+      <select name="Agregar nivel" id="languageSkillLevel"class="form-control"  [(ngModel)]="level">
+        <option value="" disabled selected>Elige un Nivel</option>
+        <option *ngFor="let level of levels"[value] ="level">{{level}}</option>
+      </select>
+  <input type="submit"  value="Agregar Otra Habilidad" class="btn">
+</div>

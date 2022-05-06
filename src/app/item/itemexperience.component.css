@@ -1,0 +1,13 @@
+.experience{
+
+  margin: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  box-shadow: 2px 5px black;
+}
+.experience h3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

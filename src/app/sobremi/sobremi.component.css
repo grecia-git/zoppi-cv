@@ -1,0 +1,29 @@
+#presentacion { background-image: [src]="../assets/img/back.gif" ;
+    background-color: darkgrey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    border-style: solid;
+    left: 0px;
+    max-width: cover;
+    padding: 2px;
+
+    }
+#fondo {
+  max-height: 1500px;
+  max-width: 2500;
+  background-size: cover;
+}
+
+
+#imagen_mediana {
+  right: 0;
+  position: abolute;
+  max-width: 200px;
+  max-height: 180px;
+  background-position-x: right;
+  z-index: auto;
+}
+
+
+
