@@ -1,27 +1,24 @@
-# ZoppiCv
+# Angular CV porfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
-## Development server
+Este proyecto sirve para mostrar un resumen de la educación, experiencia y habilidades que una persona posee.
+En el podras agregar, borrar y actualizar 
+1. Tu educación alcanzada, donde podras describir el titulo, la institucion y la fecha de inicio y finalizacion de tu estudio.
+2. Tu experiencia, donde podras informar tu rol desempeñado su fecha de inicio y de finalización.
+3. Tus habilidades, las cuales se clasifican en IT Lenguaje, Idiomas y Otras. Podras indicar por cada habilidad alcanzada el maximo nivel alcanzado.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tecnologias usadas
+1. Angular CLI 13.2.5
+2. Typescript 4.5.2
 
-## Code scaffolding
+## Como ejecutarlo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    ng build
 
-## Build
+    ng serve
+    
+## Web URL 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    http://localhost:4200/
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
