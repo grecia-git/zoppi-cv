@@ -12,7 +12,7 @@ const httpOption={
   providedIn: 'root'
 })
 export class SkillService {
-  private apiUrl = 'http://localhost:8080/skill'
+  private apiUrl = 'https://still-spire-61131.herokuapp.com/skill'
   private showAddSkill:boolean = false;
   private subject= new Subject<any>();
 
@@ -45,10 +45,3 @@ export class SkillService {
     return this.subject.asObservable();
   }
 }
-
-
-
-
-
-
-

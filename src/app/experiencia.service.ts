@@ -11,7 +11,7 @@ const httpOption={
   providedIn: 'root'
 })
 export class experienciaService {
-  private apiUrl = 'http://localhost:8080/experience';
+  private apiUrl = 'https://still-spire-61131.herokuapp.com/experience';
   private showAddExperience:boolean = false;
   private subject= new Subject<any>();
   constructor(

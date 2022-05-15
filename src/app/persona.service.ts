@@ -9,12 +9,11 @@ import { Observable, of } from 'rxjs';
 })
 export class PersonaService {
 
-  private apiUrl = 'http://localhost:8080/person/1'
+  private apiUrl = 'https://still-spire-61131.herokuapp.com/person/1'
   constructor(
     private http: HttpClient
   ) { }
   getPerson(): Observable<Person>{
     return this.http.get<Person>(this.apiUrl)
   }
-
 }

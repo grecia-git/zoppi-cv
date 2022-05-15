@@ -12,7 +12,7 @@ const httpOption={
   providedIn: 'root'
 })
 export class EducationService {
-  private apiUrl = 'http://localhost:8080/education'
+  private apiUrl = 'https://still-spire-61131.herokuapp.com/education'
   private showAddEducation:boolean = false;
   private subject= new Subject<any>();
 
@@ -46,10 +46,3 @@ export class EducationService {
     return this.subject.asObservable();
   }
 }
-
-
-
-
-
-
-
