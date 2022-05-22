@@ -1,8 +1,22 @@
-<div class="skill">
-  <h3>
-    {{skill.category}} - {{skill.type}} - {{skill.level}}
 
-    <i class="fa fa-trash" aria-hidden="true" id="borrar" (click)="(OnDelete(skill))"></i>
-  </h3>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Categoria</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Nivel</th>
+      <th scope="col" style="text-align:right;">Borrar</th>
+    </tr>
+  </thead>
 
-</div>
+  <tbody>
+
+      <td>{{skill.category}}</td>
+      <td>{{skill.type}}</td>
+      <td>{{skill.level}}</td>
+
+      <!-- <td><button class="btn btn-outline-warning"><i class="far fa-edit"></i> Editar</button></td> -->
+      <td style="text-align:right;"><button class="btn btn-outline-danger" (click)="(OnDelete(skill))"><i class="far fa-trash-alt"></i> Eliminar</button></td>
+
+  </tbody>
+</table>

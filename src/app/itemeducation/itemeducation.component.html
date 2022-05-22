@@ -6,9 +6,9 @@
       <th scope="col">Titulo</th>
       <th scope="col">Instituto</th>
       <th scope="col">Inicio</th>
-      <th scope="col">Finalizacion</th>
-      <th scope="col">Editar</th>
-      <th scope="col">Borrar</th>
+      <th scope="col">Finalización</th>
+      <!-- <th scope="col">Editar</th> -->
+      <th scope="col" style="text-align:right;">Borrar</th>
     </tr>
   </thead>
 
@@ -19,8 +19,8 @@
       <td>{{education.startDate}}</td>
       <td>{{education.endDate}}</td>
 
-      <td><button class="btn btn-outline-warning"><i class="far fa-edit"></i> Editar</button></td>
-      <td><button class="btn btn-outline-danger" (click)="(OnDelete(education))"><i class="far fa-trash-alt"></i> Eliminar</button></td>
+      <!-- <td><button class="btn btn-outline-warning"><i class="far fa-edit"></i> Editar</button></td> -->
+      <td style="text-align:right;"><button class="btn btn-outline-danger" (click)="(OnDelete(education))"><i class="far fa-trash-alt"></i> Eliminar</button></td>
 
   </tbody>
 </table>
